@@ -25,7 +25,7 @@ $postid = $wp_query->post->ID;
             ?>
                         <div class="shop__product column color-border--<?php echo get_post_meta($postid, 'color', true); ?>">
                             <div class="img img--product-large color-border--<?php echo get_post_meta($postid, 'color', true); ?>">
-                                <a class="link--img img--zoom-in" href="<?php echo $productUrl?>" target="_blank">  
+                                <a class="link--img img--zoom-in" href="<?php echo $productUrl?>">  
                                     <?php echo wp_get_attachment_image( get_sub_field( 'product_image' ), '', '', '' ); ?>
                                 </a>
                             </div>

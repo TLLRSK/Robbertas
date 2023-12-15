@@ -11,19 +11,12 @@ Text Domain: robbertas
 
 :root {
   --red: rgba(255,73,53,1);
-  --red-05: rgba(255,73,53, .3);
   --blue: rgba(69, 119, 249, 1);
-  --blue-05: rgba(69, 119, 249, .3);
   --gold: rgba(165, 112, 64, 1);
-  --gold-05: rgba(165, 112, 64, .3);
   --menu: rgb(23, 112, 60);
-  --menu-05: rgba(81, 133, 95, .3);
   --white: rgb(255, 254, 251);
-  --white-05: rgba(255, 254, 251,.8);
   --grey: rgba(153, 153, 153, 1);
-  --grey-05: rgba(153, 153, 153, .3);
   --black: rgba(18, 17, 17, 1);
-  --black-05: rgba(18, 17, 17, .5);
 }
 /* SITE */
 *, *::before, *::after {
@@ -2310,21 +2303,11 @@ input:-internal-autofill-selected {
   background-color: var(--white);
   color: var(--black);
 }
-.footer__input--newsletter::-webkit-input-placeholder {
-  color: var(--gold);
-}
-.footer__input--newsletter::-moz-placeholder {
-  color: var(--gold);
-}
-.footer__input--newsletter:-ms-input-placeholder {
-  color: var(--gold);
-}
-.footer__input--newsletter::-ms-input-placeholder {
-  color: var(--gold);
-}
-.footer__input--newsletter::placeholder {
-  color: var(--gold);
-}
+.footer__input--newsletter::-webkit-input-placeholder, 
+.footer__input--newsletter::-moz-placeholder,
+.footer__input--newsletter:-ms-input-placeholder,
+.footer__input--newsletter::-ms-input-placeholder,
+.footer__input--newsletter::placeholder,
 .footer__input--newsletter:focus {
   outline-color: var(--gold);
 }
@@ -2345,11 +2328,9 @@ input:-internal-autofill-selected {
 .footer__dropdowns {
   gap: 1.2rem;
   padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--grey);
 }
-.footer__dropdown {
-  border-bottom: 1px solid var(--black);
-  gap: 1.2rem;
-}
+
 .footer__dropdown-toggler {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -3058,29 +3039,7 @@ input:-internal-autofill-selected {
   background-color: var(--white);
 }
 
-.color-bg--gold-05 {
-  background-color: var(--gold-05);
-}
 
-.color-bg--red-05 {
-  background-color: var(--red-05);
-}
-
-.color-bg--blue-05 {
-  background-color: var(--blue-05);
-}
-
-.color-bg--black-05 {
-  background-color: var(--black-05);
-}
-
-.color-bg--grey-05 {
-  background-color: var(--grey-05);
-}
-
-.color-bg--white-05 {
-  background-color: var(--white-05);
-}
 
 .color-border--gold {
   border-color: var(--gold);
