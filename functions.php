@@ -86,6 +86,28 @@
         $args['columns'] = 5;
         return $args;
     }
+    // DEFERING DASHICONS
+    function defer_dashicons() {
+        if (!is_admin()) {
+            wp_dequeue_style('dashicons');
+            wp_deregister_style('dashicons');
+            wp_register_style('dashicons', null);
+            wp_enqueue_style('dashicons', includes_url('css/dashicons.min.css'), array(), null);
+        }
+    }
+    add_action('wp_enqueue_scripts', 'defer_dashicons');
+    // DEFERING ADMIN BAR
+    function defer_admin_bar_styles() {
+        if (!is_admin()) {
+            // Desenfila el estilo de la barra de administración
+            wp_dequeue_style('admin-bar');
+            wp_deregister_style('admin-bar');
+            
+            // Registra el estilo de la barra de administración nuevamente sin encolar
+            wp_register_style('admin-bar', null);
+        }
+    }
+    add_action('wp_enqueue_scripts', 'defer_admin_bar_styles');
 
     
 ?>

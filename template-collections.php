@@ -27,7 +27,7 @@
                 <h2><?php echo $title; ?></h2>
             </div>
             <div class="img img--large color-border--<?php  echo $color; ?>">
-                <a href="<?php echo $url; ?>" target = "_blank" class="link--img img--zoom-in">
+                <a href="<?php echo $url; ?>" class="link--img img--zoom-in">
                     <?php echo wp_get_attachment_image ( get_sub_field ( 'collection_image' ), '', '', array ( 'class' => 'img--collection' ) ); ?>
                 </a>
             </div>

@@ -216,15 +216,15 @@ $postid = $wp_query->post->ID;
 
                                     <?php $benefit = get_sub_field( 'description_benefit' ); ?>
                                     
-                                    <h4 class="h--s membership__info-list-item">
+                                    <span class="h--s membership__info-list-item">
                                         <?php echo $benefit; ?>
-                                    </h4>
+                                    </span>
 
                                 <?php endwhile; ?>
                             </div>
         
                             <div class="membership__footer">
-                                <h4 class="weight--300">?</h4>
+                                <span class="weight--300">?</span>
                             </div>
                         </div>
         

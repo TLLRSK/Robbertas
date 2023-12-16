@@ -59,8 +59,8 @@ if ( is_page ( 'home' ) ) {
                     <label for="footer__dropdown-toggler--careers" class="footer__dropdown-title row justify--between">
                         <p class="p--m">Careers</p>
                         <div class="dropdown__toggler">
-                            <span class="dropdown__line dropdown__line--horizontal color-bg--<?php if (is_404() ) { $color = 'white'; } echo $color; ?>"></span>
-                            <span class="dropdown__line dropdown__line--vertical color-bg--<?php if (is_404() ) { $color = 'white'; } echo $color; ?>"></span>
+                            <span class="dropdown__line dropdown__line--horizontal color-bg--<?php if (is_404() ) { $color = 'white'; } echo $color; ?> color-border--<?php echo $color; ?>"></span>
+                            <span class="dropdown__line dropdown__line--vertical color-bg--<?php if (is_404() ) { $color = 'white'; } echo $color; ?> color-border--<?php echo $color; ?>"></span>
                         </div>
                         
                     </label>
