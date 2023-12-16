@@ -86,6 +86,9 @@
         $args['columns'] = 5;
         return $args;
     }
+    // DISABLE WOOCOMMERCE STYLESHEET
+    // add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' ); 
+    
     // DEFERING DASHICONS
     function defer_dashicons() {
         if (!is_admin()) {

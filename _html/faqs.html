@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ROBBERTA'S - Frequently asked questions</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="topbar js-topbar color--grey color-border--grey">
+            <div class="topbar__menu-btn">
+                <input type="checkbox" class="topbar__menu-toggler js-topbar__menu-toggler" id="topbar__menu-toggler">
+                <label for="topbar__menu-toggler" class="btn--topbar-menu">
+                  <span class="burger burger--top color-bg--grey"></span>
+                  <span class="burger burger--bottom color-bg--grey"></span>
+                </label>
+            </div>
+    
+            <div class="topbar__link">
+                <a href="index.html" class="link link--grey link--home">ROBBERTA'S</a>
+            </div>
+
+            <ul class="topbar__links-list">
+                <li class="topbar__list-item">
+                    <a href="./shop_collection-stayshy.html" class="link link--topbar link--grey">New</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="./shop_collections.html" class="link link--topbar link--grey">Collections</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="./404.html" class="link link--topbar link--grey">Signatures</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="social-club_subscription-form.html" class="link link--topbar link--grey">Membership</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="./faqs.html" class="link link--topbar link--grey">FAQS</a>
+                </li>
+            </ul>
+    
+            <div class="topbar__tools">
+                <div class="topbar__tool-btn btn--tool btn--search">
+                    <img class="img--icon color-icon--grey" src="/icons/search.svg" alt="">
+                </div>
+                <div class="topbar__tool-btn btn--tool btn--cart js-btn--cart">
+                    <img class="img--icon color-icon--grey" src="/icons/bag.svg" alt="">
+                </div>
+            </div>
+        </div> 
+
+        <div class="menu js-menu">
+            <ul class="menu__links-list">
+                <li class="menu__link-item">
+                    <a href="./shop_collection-stayshy.html" class="link link--menu h2">NEW</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="./shop_collections.html" class="link link--menu h2">COLLECTIONS</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="./404.html" class="link link--menu h2">SIGNATURES</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="social-club_subscription-form.html" class="link link--menu h2">MEMBERSHIP</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="./faqs.html" class="link link--menu h2">FAQS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cart js-cart">
+        <div class="section__header header--cart row">
+            <div class="cart__product-total-amount row">
+                <h2 class="h--m weight--300 font--mulish">YOUR BAG</h2>
+                <h2 class="h--m weight--300 font--mulish">(1)</h2>
+            </div>
+
+            <button id="cart__toggler" class="cart__toggler js-cart__toggler btn--cart-close">
+                <span class="cart__toggler-burger"></span>
+                <span class="cart__toggler-burger"></span>
+            </button>
+        </div>
+
+        <div class="cart__product-list">
+            <div class="cart__list-item row">
+                <div class="img img--product-cart">
+                    <img class="flex--1" src="/imgs/shop/product--medium/product-test-medium.jpg" alt="">
+                </div>
+
+                <div class="cart__product-info row">
+                    <div class="cart__product-info--left column justify--between">
+                        <div class="cart__product-basic-info">
+                            <p class="p--m weight--500">PRODUCT NAME</p>
+                            <div class="cart__product-price row gap--s">
+                                <p class="h--s weight--600 js-product-price--number">99.99</p>
+                                <p class="h--s weight--600 js-product-price--symbol">€</p>
+                            </div>
+                        </div>
+
+                        <div class="cart__product-size row gap--s">
+                            <p class="p--m weight--500">Size:</p>
+                            <p class="p--m weight--600 js-product-size">XL</p>
+                        </div>
+
+                        <div class="cart__product-amount-options row gap--s">
+                            <button class="btn--amount cart__amount-btn--substract">-</button>
+                            <h4 class="cart__product-amount">1</h4>
+                            <button class="btn--amount cart__amount-btn--add">+</button>
+                        </div>
+                    </div>       
+                    <div class="cart__product-info--left column justify--end">
+                        <div class="cart__product-remove">
+                            <button class="btn p--m weight--500 btn--remove">remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__footer column">
+            <div class="cart__total-price row">
+                <p class="h--s weight--600">TOTAL:</p>
+                
+                <div class="row justify--end gap--s">
+                    <p class="h--s weight--600 js-total-price--number">99.99</p>
+                    <p class="h--s weight--600 js-total-price--symbol">€</p>
+                </div>
+            </div>
+
+            <button id="btn--checkout" class="btn btn--checkout active">CHECKOUT</button>
+        </div>
+    </div>
+    <header class="header page__header color--grey color-border--grey">
+        <div class="header__bread-crumbs color-border--grey">
+            <a href="" class="link link--bread-crumb color--grey">Home</a>
+            <p class="bread-crumb-arrow">></p>
+            <a href="" class="link link--bread-crumb color--grey">Shop</a>
+            <p class="bread-crumb-arrow">></p>
+            <a href="" class="link link--bread-crumb color--grey">Product name</a>
+        </div>
+        <h1 class="h--xxl">FAQS</h1>
+    </header>
+    <main class="main faqs">
+        <div class="faqs__main column color--grey">
+            <div class="faqs__basic-questions">
+                <div class="faqs__basic-question">
+                    <div class="h--s weight--600">Who are you?</div>
+                    <div class="faqs__answer">We are those who dwell in the shadows, guardians of silence beauty. We started with a simple purpose, but with a profound impact: to create art through fashion and bring it to the right people.</div>
+                </div>
+                <div class="faqs__basic-question">
+                    <div class="h--s weight--600">What do you do?</div>
+                    <div class="faqs__answer">Each season, we join hands with talented designers and artists to create limited collections of balaclavas, each with its own meaning and personality.</div>
+                </div>
+                <div class="faqs__basic-question">
+                    <div class="h--s weight--600">Where are you?</div>
+                    <div class="faqs__answer">We are nestled in the heart of Italy, in a secluded workshop surrounded by the rolling hills of the countryside.
+                        <br>
+                        <br>
+                        Only the hushed whispers of our designers can be heard as they carefully plan each stitch and seam with precision.</div>
+                </div>
+            </div>
+            <div class="faqs__more-questions">
+                <div class="faqs__more-questions-title">
+                    <h2 class="h--m weight--300">MORE QUESTIONS</h2>
+                </div>
+                <ol class="faqs__more-questions-links column">
+                    <li>
+                        <a href="#question-1" class="link link--question link--grey">What are the available payment methods?</a>
+                    </li>
+                    <li>
+                        <a href="#question-2" class="link link--question link--grey">How can I track my order?</a>
+                    </li>
+                    <li>
+                        <a href="#question-3" class="link link--question link--grey">What are the shipping options available?</a>
+                    </li>
+                    <li>
+                        <a href="#question-4" class="link link--question link--grey">How can I exchange or return a product?</a>
+                    </li>
+                    <li>
+                        <a href="#question-5" class="link link--question link--grey">Is there any additional cost for shipping or delivery?</a>
+                    </li>
+                    <li>
+                        <a href="#question-6" class="link link--question link--grey">What happens if I receive a defective or incorrect product?</a>
+                    </li>
+                    <li>
+                        <a href="#question-7" class="link link--question link--grey">What is the delivery time for the products?</a>
+                    </li>
+                    <li>
+                        <a href="#question-8" class="link link--question link--grey">Do you offer any kind of guarantee or money back policy?</a>
+                    </li>
+                    <li>
+                        <a href="#question-9" class="link link--question link--grey">How can I find my correct size?</a>
+                    </li>
+                    <li>
+                        <a href="#question-10" class="link link--question link--grey">Do you offer discounts or special promotions?</a>
+                    </li>
+                    <li>
+                        <a href="#question-11" class="link link--question link--grey">How can I make a suggestion or feedback about your website or products?</a>
+                    </li>
+                    <li>
+                        <a href="#question-12" class="link link--question link--grey">Is there a limit to the number of products I can buy?</a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="line--horizontal color-bg--grey"></div>
+
+            <ol class="faqs__more-questions-list column">
+                <li id="question-1" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">What are the available payment methods?</p>
+                    <p class="faqs__answer">We accept various payment methods, including cgreyit card (Visa, Mastercard, American Express), PayPal, bank transfer and crypto.</p>
+                </li>
+                <li id="question-2" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">How can I track my order?</p>
+                    <div class="faqs__answer">You can track your order by using the pking number provided in the shipping confirmation email.</div>
+                </li>
+                <li id="question-3" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">What are the shipping options available?</p>
+                    <p class="faqs__answer">We offer standard shipping and express shipping options. Standard shipping usually takes 5-7 business days, while express shipping takes 2-3 business days.</p>
+                </li>
+                <li id="question-4" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">How can I exchange or return a product?</p>
+                    <p class="faqs__answer">If you need to change or return an item, please contact our customer service team within 7 days of receiving your order. They will assist you in the process and provide you with further instructions.</p>
+                </li>
+                <li id="question-5" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">Is there any additional cost for shipping or delivery?</p>
+                    <p class="faqs__answer">No.</p>
+                </li>
+                <li id="question-6" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">What happens if I receive a defective or incorrect product?</p>
+                    <p class="faqs__answer">If you receive a defective or incorrect item, please contact our customer service team immediately and they will assist you in resolving the issue.</p>
+                </li>
+                <li id="question-7" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">What is the delivery time for the products?</p>
+                    <p class="faqs__answer">Our estimated delivery time is 5-7 business days for standard shipping and 2-3 business days for express shipping.</p>
+                </li>
+                <li id="question-8" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">Do you offer any kind of guarantee or money back policy?</p>
+                    <p class="faqs__answer">Yes, we offer a 30-day money-back guarantee for all of our products. If you are not satisfied with your purchase, you can return it for a full refund.</p>
+                </li>
+                <li id="question-9" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">How can I find my correct size?</p>
+                    <div class="faqs__answer">Our size chart is available on each uct page, and you can also refer to the size guide section of our website. If you have any questions about sizing, please don't hesitate to contact our customer service team.</div>
+                </li>
+                <li id="question-10" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">Do you offer discounts or special promotions?</p>
+                    <p class="faqs__answer">Yes, we offer various discounts and special promotions from time to time. You can sign up for our email newsletter to stay updated on the latest offers.</p>
+                </li>
+                <li id="question-11" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">How can I make a suggestion or feedback about your website or products?</p>
+                    <p class="faqs__answer">We value your feedback. Please send us an email to [customer.service@robbertas.com] with your suggestions or comments, and our team will be happy to assist you.</p>
+                </li>
+                <li id="question-12" class="faqs__more-questions-list-item">
+                    <p class="p--m weight--600">Is there a limit to the number of products I can buy?</p>
+                    <p class="faqs__answer">There is no limit to the number of products you can purchase. However, we do reserve the right to limit quantities for certain high-demand items.</p>
+                </li>
+            </ol>
+
+            <div class="line--horizontal color-bg--grey"></div>
+
+            <div class="h--m faqs__asksymbol">?</div>
+
+        </div>
+    </main>
+    
+    <footer class="footer color--grey color-border--grey">
+        <div class="footer__header color-border--grey">
+           <p class="p--m">In an dark and quiet yet elegantly-designed somewhere hidden workshop, a group of people can’t wait to find new partners in crime.</p>
+        </div>
+        
+        <div class="footer__field column color-border--grey">
+            <p class="p--m">Contact below</p>
+
+            <div class="footer__contact-list">
+                <ul class="footer__contact-list-socialmedia">
+                    <li class="footer__contact-list-item">    
+                        <a class="link--grey link--icon link" href="">
+                            <img class="img--icon color-icon--grey" src="/icons/mail.svg" alt="">
+                            Email
+                        </a>
+                    </li>
+                    <li class="footer__contact-list-item">
+                        <a class="link--grey link--icon link" href="">
+                            <img class="img--icon color-icon--grey" src="/icons/faqs.svg" alt="">
+                            FAQS
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="footer__contact-list-socialmedia">
+                    <li class="footer__contact-list-item">
+                        
+                        <a class="link--grey link--icon link" href="">
+                            <img class="img--icon color-icon--grey" src="/icons/instagram.svg" alt="">
+                            Instagram
+                        </a>
+                    </li>
+                    
+                    <li class="footer__contact-list-item">
+                        <a class="link--grey link--icon link" href="">
+                            <img class="img--icon color-icon--grey" src="/icons/twitter.svg" alt="">
+                            Twitter
+                        </a>
+                    </li>
+    
+                    <li class="footer__contact-list-item">
+                        <a class="link--grey link--icon link" href="">
+                            <img class="img--icon color-icon--grey" src="/icons/tiktok.svg" alt="">
+                            Tiktok
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__field color-border--grey">
+            <div class="footer__newsletter column color-border--grey">
+                <p>Suscribe to our newsletter</p>
+
+                <form action="" class="footer__form--email row">
+                    <input class="footer__input--newsletter color-border--grey color--grey color-newsletter--grey" type="email" placeholder="E-mail">
+                    <input class="footer__input--submit color--grey flex p--s" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__dropdowns column">
+            <div class="footer__dropdown column color-border--grey">
+                <input type="checkbox" class="footer__dropdown-toggler" id="footer__dropdown-toggler--help">
+                <label for="footer__dropdown-toggler--help" class="footer__dropdown-title js-footer__dropdown-title row justify--between">
+                    <p class="p--m">Help</p>
+                    <span class="h--m">+</span>
+                </label>
+                <div class="footer__dropdown-content js-footer__dropdown-content">
+                    <p class="p--s">Did you have any problem with our products, payment or shipping? Write us. Do you feel lost or purposeless? Write us. Do you think we should know about you? Write us.</p>
+                </div>
+            </div>
+
+            <div class="footer__dropdown column color-border--grey">
+                <input type="checkbox" class="footer__dropdown-toggler" id="footer__dropdown-toggler--careers">
+                <label for="footer__dropdown-toggler--careers" class="footer__dropdown-title row justify--between">
+                    <p class="p--m">Careers</p>
+                    <span class="h--m">+</span>
+                </label>
+                <div class="footer__dropdown-content">
+                    <p class="p--s">Currently we don't have any open vacancies, but feel free to write us...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright color--grey">
+            <p>Copyright robberta's 2023</p>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

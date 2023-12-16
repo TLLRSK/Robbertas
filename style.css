@@ -1684,6 +1684,94 @@ img {
 .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
   background-color: transparent;
 }
+
+/* Checkout */
+
+.woocommerce-info {
+  background-color: transparent;
+  border-top: 1px solid;
+  border-color: var(--black);
+}
+.showcoupon {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.checkout_coupon.woocommerce-form-coupon[method="post"] {
+  border: none;
+  border-color: var(--black);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+.checkout_coupon.woocommerce-form-coupon[method="post"] > .form-row > button.button[name="apply_coupon"] {
+  margin-top: 1.2rem;
+  background-color: var(--black-05);
+  border-radius: 4.8rem;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 300;
+}
+.checkout_coupon.woocommerce-form-coupon[method="post"] > .form-row > button.button[name="apply_coupon"]:hover {
+  background-color: var(--black);
+}
+#coupon_code {
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+  outline: none;
+  border: 1px solid;
+}
+
+.woocommerce-input-wrapper > .input-text {
+  appearance: none;
+  outline: none;
+  border: 1px solid;
+  padding: 1.2rem;
+  background-color: transparent;
+}
+.form-row textarea {
+  height: 4.2rem;
+}
+.select2-container .select2-selection--single {
+  appearance: none;
+  height: auto;
+  outline: none;
+  border: 1px solid;
+  padding: 1.2rem;
+  background-color: transparent;
+}
+#order_comments {
+  padding: 1.2rem;
+  height: 6.4em;
+}
+.woocommerce-checkout-review-order-table > thead > tr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  border: none;
+}
+.woocommerce-checkout-review-order-table > tbody > tr > td {
+  font-size: 2.4rem;
+}
+.woocommerce table.shop_table td, .woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th {
+  border: none;
+}
+.woocommerce-checkout-review-order-table > tfoot > tr {
+  font-size: 2.4rem;
+  border: none;
+}
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment{
+  background-color: var(--white);
+}
+#place_order {
+  background-color: var(--black-05);
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding: 2.4rem;
+  border-radius: 4.8rem;
+}
+#place_order:hover {
+  background-color: var(--black);
+}
 /*single product - related products */
 
 .related.products {

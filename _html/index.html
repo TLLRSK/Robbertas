@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ROBBERTA'S - Exclusive balaclava designs</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="topbar js-topbar color--red color-border--red">
+            <div class="topbar__menu-btn">
+                <input type="checkbox" class="topbar__menu-toggler js-topbar__menu-toggler" id="topbar__menu-toggler">
+                <label for="topbar__menu-toggler" class="btn--topbar-menu">
+                  <span class="burger burger--top color-bg--red"></span>
+                  <span class="burger burger--bottom color-bg--red"></span>
+                </label>
+            </div>
+    
+            <div class="topbar__link">
+                <a href="index.html" class="link link--red link--home">ROBBERTA'S</a>
+            </div>
+
+            <ul class="topbar__links-list">
+                <li class="topbar__list-item">
+                    <a href="./shop_collection-stayshy.html" class="link link--topbar link--red">New</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="./shop_collections.html" class="link link--topbar link--red">Collections</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="./404.html" class="link link--topbar link--red">Signatures</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="social-club_subscription-form.html" class="link link--topbar link--red">Membership</a>
+                </li>
+                <li class="topbar__list-item">
+                    <a href="./faqs.html" class="link link--topbar link--red">FAQS</a>
+                </li>
+            </ul>
+    
+            <div class="topbar__tools">
+                <div class="topbar__tool-btn btn--tool btn--search">
+                    <img class="img--icon color-icon--red" src="./images/icons/search.svg" alt="">
+                </div>
+                <div class="topbar__tool-btn btn--tool btn--cart js-btn--cart">
+                    <img class="img--icon color-icon--red" src="./images/icons/bag.svg" alt="">
+                </div>
+            </div>
+        </div> 
+
+        <div class="menu js-menu">
+            <ul class="menu__links-list">
+                <li class="menu__link-item">
+                    <a href="./shop_collection-stayshy.html" class="link link--menu h2">NEW</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="./shop_collections.html" class="link link--menu h2">COLLECTIONS</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="./404.html" class="link link--menu h2">SIGNATURES</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="social-club_subscription-form.html" class="link link--menu h2">MEMBERSHIP</a>
+                </li>
+                <li class="menu__link-item">
+                    <a href="./faqs.html" class="link link--menu h2">FAQS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cart js-cart">
+        <div class="section__header header--cart row">
+            <div class="cart__product-total-amount row">
+                <h2 class="h--m weight--300 font--mulish">YOUR BAG</h2>
+                <h2 class="h--m weight--300 font--mulish">(1)</h2>
+            </div>
+
+            <button id="cart__toggler" class="cart__toggler js-cart__toggler btn--cart-close">
+                <span class="cart__toggler-burger"></span>
+                <span class="cart__toggler-burger"></span>
+            </button>
+        </div>
+
+        <div class="cart__product-list">
+            <div class="cart__list-item row">
+                <div class="img img--product-cart">
+                    <img class="flex--1" src="./images/shop/product--medium/product-test-medium.jpg" alt="">
+                </div>
+
+                <div class="cart__product-info row">
+                    <div class="cart__product-info--left column justify--between">
+                        <div class="cart__product-basic-info">
+                            <p class="p--m weight--500">PRODUCT NAME</p>
+                            <div class="cart__product-price row gap--s">
+                                <p class="h--s weight--600 js-product-price--number">99.99</p>
+                                <p class="h--s weight--600 js-product-price--symbol">€</p>
+                            </div>
+                        </div>
+
+                        <div class="cart__product-size row gap--s">
+                            <p class="p--m weight--500">Size:</p>
+                            <p class="p--m weight--600 js-product-size">XL</p>
+                        </div>
+
+                        <div class="cart__product-amount-options row gap--s">
+                            <button class="btn--amount cart__amount-btn--substract">-</button>
+                            <h4 class="cart__product-amount">1</h4>
+                            <button class="btn--amount cart__amount-btn--add">+</button>
+                        </div>
+                    </div>       
+                    <div class="cart__product-info--left column justify--end">
+                        <div class="cart__product-remove">
+                            <button class="btn p--m weight--500 btn--remove">remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__footer column">
+            <div class="cart__total-price row">
+                <p class="h--s weight--600">TOTAL:</p>
+                
+                <div class="row justify--end gap--s">
+                    <p class="h--s weight--600 js-total-price--number">99.99</p>
+                    <p class="h--s weight--600 js-total-price--symbol">€</p>
+                </div>
+            </div>
+
+            <button id="btn--checkout" class="btn btn--checkout active">CHECKOUT</button>
+        </div>
+    </div>
+
+    <header id="home" class="header hero__header color--red">
+        <h1 class="header__title hero__header-title js-hero__header-title h--xxl">ROBBERTA'S</h1>
+
+        <div class="hero__header-subtitle row">
+            <div class="column flex--1 align--center">
+                <p class="p--s">STRICTLY<br>LIMITED<br>SERIES</p>
+            </div>
+            <div class="line--vertical color-bg--red"></div>
+            <div class="column flex--1 align--center">
+                <p class="p--s">FINELY<br>CURATED<br>DESIGNS</p>
+            </div>
+            <div class="line--vertical color-bg--red"></div>
+            <div class="column flex--1 align--center">
+                <p class="p--s">TOP<br>MATERIAL<br>QUALITIES</p>
+            </div>
+            <div class="line--vertical color-bg--red"></div>
+            <div class="column flex--1 align--center">
+                <p class="p--s">FREE<br>SHIPPING</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main index">
+        <section class="hero color--red" id="hero">
+            <div class="hero__img img--large color-border--red column">
+                <div class="section__header new-collection__header flex">
+                    <div class="section__title">
+                        <h2 class="h--xl">STAY SHY & SHINE</h2>
+                    </div>
+                    <div class="section__subtitle">
+                        <h3 class="h--s">NEW COLLECTION</h3>
+                    </div>
+                </div>
+                <div class="new-collection__footer column">
+                    <a href="./shop_collection-stayshy.html" class="btn btn--link link--action btn--action btn--red">LOOK AT IT</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="prev-collection flex color--blue">
+            <div class="header--section prev-collection__header color-border--blue">
+                <h3 class="h--s weight--300">PREVIOUS COLLECTION</h3>
+                <h2 class="section__title">THE RIVER THEY'LL CRY</h2>
+            </div>
+
+            <div class="prev-collection__grid grid--columns-two">
+                <div class="grid-item">
+                    <div class="img color-border--blue">
+                        <a class="link--img" href="./shop_product-details.html">  
+                            <img src="./images/shop/product--small/product-test-small.jpg"/>
+                        </a>
+                    </div>
+                    <div class="prev-collection__product-info flex">
+                        <div class="prev-collection__product-name">
+                            <p class="p--s">Product</p>
+                        </div>
+    
+                        <div class="prev-collection__product-price">
+                            <p class="p--s weight--500">24,00</p>
+                            <p class="p--s weight--500">€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img color-border--blue">
+                        <a class="link--img" href="./shop_product-details.html">  
+                            <img src="./images/shop/product--small/product-test-small.jpg"/>
+                        </a>
+                    </div>
+                    <div class="prev-collection__product-info flex">
+                        <div class="prev-collection__product-name">
+                            <p class="p--s">Product</p>
+                        </div>
+    
+                        <div class="prev-collection__product-price">
+                            <p class="p--s weight--500">24,00</p>
+                            <p class="p--s weight--500">€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img color-border--blue">
+                        <a class="link--img" href="./shop_product-details.html">  
+                            <img src="./images/shop/product--small/product-test-small.jpg"/>
+                        </a>
+                    </div>
+                    <div class="prev-collection__product-info flex">
+                        <div class="prev-collection__product-name">
+                            <p class="p--s">Product</p>
+                        </div>
+    
+                        <div class="prev-collection__product-price">
+                            <p class="p--s weight--500">24,00</p>
+                            <p class="p--s weight--500">€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img color-border--blue">
+                        <a class="link--img" href="./shop_product-details.html">  
+                            <img src="./images/shop/product--small/product-test-small.jpg"/>
+                        </a>
+                    </div>
+                    <div class="prev-collection__product-info flex">
+                        <div class="prev-collection__product-name">
+                            <p class="p--s">Product</p>
+                        </div>
+    
+                        <div class="prev-collection__product-price">
+                            <p class="p--s weight--500">24,00</p>
+                            <p class="p--s weight--500">€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prev-collection__info">
+                <div class="prev-collection__title color-border--blue">
+                    <h2 class="h--xxl section__title">The river they'll cry</h2>
+                    <h3 class="h--m weight--300">PREVIOUS COLLECTION</h3>
+                </div>
+            </div>
+        </section>
+
+        <a href="./shop_collection-theriver.html" class="btn btn--action btn--blue">VIEW MORE</a>
+
+        <section class="about color--red" id="about">
+            <div class="header--section color-border--red">
+                <div class="about__header-lineart lineart--header color-border--red">
+                    <div class="lineart--ellipse about__ellipse--left color-border--red"></div>
+                    <div class="lineart--ellipse about__ellipse--right color-border--red"></div>
+                </div>
+                <div class="about__header-title">
+                    <h2 class="h--m">WE ARE</h2>
+                    <h2 class="h--xl">ROBBERTA'S</h2>
+                </div>
+                
+            </div>
+
+            <img class="img about__img img--large color-border--red" src="./images/index/index-about.jpg"></img>
+
+            <div class="about__info column">
+                <div class="about__info-keywords row color-border--red">
+                    <div class="about__keyword color--black">
+                        <h3 class="h--m weight--400">BRINGING</h3>
+                    </div>
+
+                    <div class="about__keyword">
+                        <h3 class="h--m weight--400">EXCLUSIVE</h3>
+                    </div>
+
+                    <div class="about__keyword color--black">
+                        <h3 class="h--m weight--400">BALACLAVA</h3>
+                    </div>
+
+                    <div class="about__keyword color--black">
+                        <h3 class="h--m weight--400">DESIGNS</h3>
+                    </div>
+                </div>
+
+                <div class="about__info-list flex">
+                    <div class="about__info-list-item color-border--red">
+                        <p class="p--s">Seasonal collection drops in strictly limited series.</p>
+                        <img src="./images/icons/about-balaclava-svg.svg" class="img--about-icon" alt="">
+                    </div>
+
+                    <div class="about__info-list-item color-border--red">
+                        <p class="p--s">Keep your head warm, safe and unique with our finely curated headwear accesories.</p>
+                        <img src="./images/icons/about-exclusive-svg.svg" class="img--about-icon color-" alt="">
+                    </div>
+
+                    <div class="about__info-list-item color-border--red">
+                        <p class="p--s">Our manifacture materials are carefully selected respecting laboral conditions and environmental impact.</p>
+                        <img src="./images/icons/about-caring-svg.svg" class="img--about-icon" alt="">
+                    </div>
+                    
+                    <div class="about__info-list-item color-border--red">
+                        <p class="p--s">Buy online your favourite design and receive it at home without shipping costs.</p>
+                        <img src="./images/icons/about-shipping-svg.svg" class="img--about-icon" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="./shop_collections.html" class="btn btn--action btn--red">VISIT COLLECTIONS</a>
+
+        <section class="social-club color--gold">
+            <div class="social-club__card column">
+                <div class="header--section social-club__header column color-border--gold">
+                    <div class="social-club__header-lineart">
+                        <div class="lineart--ellipse social-club__ellipse--left color-border--gold"></div>
+                        <div class="lineart--ellipse social-club__ellipse--center color-border--gold"></div>
+                        <div class="lineart--ellipse social-club__ellipse--right color-border--gold"></div>
+                    </div>
+
+                    <div class="section__title">
+                        <h2>WALK WITH US</h2>
+                    </div>
+                </div>
+
+                <div class="social-club__card-content">
+                    <div class="social-club__info column">
+                        <h4 class="social-club__info-item">DO YOU WANT ACCESS TO</h4>
+            
+                        <div class="social-club__info-list row">
+                            <h4 class="social-club__info-list-item">
+                                EVENTS INFO
+                            </h4>
+                            <h4 class="social-club__info-list-item">
+                                DISCOUNTS
+                            </h4>
+                            <h4 class="social-club__info-list-item">
+                                RUMORS
+                            </h4>
+                            <h4 class="social-club__info-list-item">
+                                TIPS
+                            </h4>
+                        </div>
+    
+                        <div class="social-club__footer">
+                            <h4 class="weight--300">?</h4>
+                        </div>
+                    </div>
+    
+                    <div class="social-club__img img--large color-border--gold">
+                        <a href="./social-club_subscription-form.html" class="btn btn--link btn--gold social-club__button-on-img btn--action color--gold">JOIN THE GOLDEN LIST</a>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer color--gold color-border--gold">
+        <div class="footer__header color-border--gold">
+           <p class="p--m">In an dark and quiet yet elegantly-designed somewhere hidden workshop, a group of people can’t wait to find new partners in crime.</p>
+        </div>
+        
+        <div class="footer__field column color-border--gold">
+            <p class="p--m">Contact below</p>
+
+            <div class="footer__contact-list">
+                <ul class="footer__contact-list-socialmedia">
+                    <li class="footer__contact-list-item">   
+                        <a class="link--gold link--icon link" href="">
+                            <img class="img--icon color-icon--gold" src="./images/icons/mail.svg" alt="">
+                            Email
+                        </a>
+                    </li>
+                    <li class="footer__contact-list-item">
+                        <a class="link--gold link--icon link" href="">
+                            <img class="img--icon color-icon--gold" src="./images/icons/faqs.svg" alt="">
+                            FAQS
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="footer__contact-list-socialmedia">
+                    <li class="footer__contact-list-item">
+                        
+                        <a class="link--gold link--icon link" href="">
+                            <img class="img--icon color-icon--gold" src="./images/icons/instagram.svg" alt="">
+                            Instagram
+                        </a>
+                    </li>
+                    
+                    <li class="footer__contact-list-item">
+                        <a class="link--gold link--icon link" href="">
+                            <img class="img--icon color-icon--gold" src="./images/icons/twitter.svg" alt="">
+                            Twitter
+                        </a>
+                    </li>
+    
+                    <li class="footer__contact-list-item">
+                        <a class="link--gold link--icon link" href="">
+                            <img class="img--icon color-icon--gold" src="./images/icons/tiktok.svg" alt="">
+                            Tiktok
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__field color-border--gold">
+            <div class="footer__newsletter column color-border--gold">
+                <p>Suscribe to our newsletter</p>
+
+                <form action="" class="footer__form--email row">
+                    <input class="footer__input--newsletter color-border--gold color--gold color-newsletter--gold" type="email" placeholder="E-mail">
+                    <input class="footer__input--submit color--gold flex p--s" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__dropdowns column">
+            <div class="footer__dropdown column color-border--gold">
+                <input type="checkbox" class="footer__dropdown-toggler" id="footer__dropdown-toggler--help">
+                <label for="footer__dropdown-toggler--help" class="footer__dropdown-title js-footer__dropdown-title row justify--between">
+                    <p class="p--m">Help</p>
+                    <span class="h--m">+</span>
+                </label>
+                <div class="footer__dropdown-content js-footer__dropdown-content">
+                    <p class="p--s">Did you have any problem with our products, payment or shipping? Write us. Do you feel lost or purposeless? Write us. Do you think we should know about you? Write us.</p>
+                </div>
+            </div>
+
+            <div class="footer__dropdown column color-border--gold">
+                <input type="checkbox" class="footer__dropdown-toggler" id="footer__dropdown-toggler--careers">
+                <label for="footer__dropdown-toggler--careers" class="footer__dropdown-title row justify--between">
+                    <p class="p--m">Careers</p>
+                    <span class="h--m">+</span>
+                </label>
+                <div class="footer__dropdown-content">
+                    <p class="p--s">Currently we don't have any open vacancies, but feel free to write us...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright color--gold">
+            <p>Copyright robberta's 2023</p>
+        </div>
+    </footer>
+    
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
